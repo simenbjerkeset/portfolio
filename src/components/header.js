@@ -14,6 +14,9 @@ const Header = ({ siteTitle }) => (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
+        display: `flex`,
+        flexDirection: `row`,
+        justifyContent: `space-between`
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -24,9 +27,20 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          Simen BA
         </Link>
       </h1>
+      <h3>
+        <Link
+          to="/page-2"
+          style={{
+            color: `white`,
+            textDecoration: `none`
+          }}
+        >
+          Page-2
+        </Link>
+      </h3>
     </div>
   </header>
 )
